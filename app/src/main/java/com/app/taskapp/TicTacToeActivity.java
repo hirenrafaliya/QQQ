@@ -11,6 +11,7 @@ import com.app.taskapp.databinding.ActivityTicTacToeBinding;
 
 public class TicTacToeActivity extends AppCompatActivity {
 
+
     private ActivityTicTacToeBinding binding;
     private int turn = 0;
     private int[][] currentGame;
