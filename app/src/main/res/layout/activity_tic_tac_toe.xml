@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TicTacToeActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutParentGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="@dimen/block_size"
+                android:layout_height="@dimen/block_size"
+                android:id="@+id/img00"
+                android:layout_margin="12dp"
+                app:tint="@color/black"
+                android:background="#F0E4FF" />
+
+            <ImageView
+                android:layout_width="@dimen/block_size"
+                android:layout_height="@dimen/block_size"
+                android:id="@+id/img01"
+                android:layout_margin="12dp"
+                app:tint="@color/black"
+                android:background="#F0E4FF" />
+
+            <ImageView
+                android:layout_width="@dimen/block_size"
+                android:layout_height="@dimen/block_size"
+                android:id="@+id/img02"
+                android:layout_margin="12dp"
+                app:tint="@color/black"
+                android:background="#F0E4FF" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/block_size"
+                android:layout_height="@dimen/block_size"
+                android:id="@+id/img10"
+                android:layout_margin="12dp"
+                app:tint="@color/black"
+                android:background="#F0E4FF" />
+
+            <ImageView
+                android:layout_width="@dimen/block_size"
+                android:layout_height="@dimen/block_size"
+                android:id="@+id/img11"
+                android:layout_margin="12dp"
+                app:tint="@color/black"
+                android:background="#F0E4FF" />
+
+            <ImageView
+                android:layout_width="@dimen/block_size"
+                android:layout_height="@dimen/block_size"
+                android:id="@+id/img12"
+                android:layout_margin="12dp"
+                app:tint="@color/black"
+                android:background="#F0E4FF" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/block_size"
+                android:layout_height="@dimen/block_size"
+                android:id="@+id/img20"
+                android:layout_margin="12dp"
+                app:tint="@color/black"
+                android:background="#F0E4FF" />
+
+            <ImageView
+                android:layout_width="@dimen/block_size"
+                android:layout_height="@dimen/block_size"
+                android:id="@+id/img21"
+                android:layout_margin="12dp"
+                app:tint="@color/black"
+                android:background="#F0E4FF" />
+
+            <ImageView
+                android:layout_width="@dimen/block_size"
+                android:layout_height="@dimen/block_size"
+                android:id="@+id/img22"
+                android:layout_margin="12dp"
+                app:tint="@color/black"
+                android:background="#F0E4FF" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O Turn"
+        android:textAlignment="center"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutParentGame" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:text="Reset Game"
+        app:layout_constraintEnd_toEndOf="@+id/layoutParentGame"
+        app:layout_constraintStart_toStartOf="@+id/layoutParentGame"
+        app:layout_constraintTop_toBottomOf="@+id/tvStatus" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:text="Back to home"
+        app:layout_constraintEnd_toEndOf="@+id/layoutParentGame"
+        app:layout_constraintStart_toStartOf="@+id/layoutParentGame"
+        app:layout_constraintTop_toBottomOf="@+id/btnReset" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
